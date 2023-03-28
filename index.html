@@ -12,7 +12,7 @@
   <body>
     <div class="scores"><a href="highscores.html">View Highscores</a></div>
 
-    <div class="timer">Time: <span id="time">0</span></div>
+    <div class="timer">Time: <span id="time">1:30</span></div>
 
     <div class="wrapper">
       <div id="start-screen" class="start">
@@ -25,48 +25,12 @@
         <button id="start">Start Quiz</button>
       </div>
 
-      <div id="question1" class="hide">
-        <h2 id="question-title">What is the element used – and hidden – in code that explains things and makes the content more readable?</h2>
+      <div id="questions" class="hide">
+        <h2 id="question-title"></h2>
         <div id="choices" class="choices">
-          <ul>
-            <li>comparissons</li>
-            <li>notes</li>
-            <li>comments</li>
-            <li>quotations</li>
-          </ul>
         </div>
       </div>
-      <div id="question2" class="hide">
-        <h2 id="question-title">In JavaScript, what is a block of code called that is used to perform a specific task?        </h2>
-        <div id="choices" class="choices">
-          <ul>
-          <li>string</li>
-          <li>function</li>
-          <li>declaration</li>
-          <li>variable</li>
-        </ul>
-      </div>
-      </div>
-      <div id="questions3" class="hide">
-        <h2 id="question-title">Where is the JavaScript placed inside an HTML document or page?</h2>
-        <div id="choices" class="choices">
-          <ul>
-            <li>in the title section </li>
-            <li>in the mea section</li>
-            <li>in the body and head sections</li>
-            <li>in the footer section</li>
-          </ul>
-        </div>
-      </div>
-      <div id="question4" class="hide">
-        <h2 id="question-title">What is the name of the statement that is used to exit or end a loop?</h2>
-        <div id="choices" class="choices">
-          <ul>
-            <li>Falter statement</li>
-            <li>close statement</li>
-            <li>conditional statement</li>
-            <li>break statement</li>
-          </ul>
+
         </div>
       </div>
       <div id="question5" class="hide">
@@ -81,7 +45,7 @@
         </div>
       </div>
 
-      
+
       <div id="end-screen" class="hide">
         <h2>All done!</h2>
         <p>Your final score is <span id="final-score"></span>.</p>
@@ -96,5 +60,8 @@
 
     <script src="./assets/js/questions.js"></script>
     <script src="./assets/js/logic.js"></script>
+    <script src="./script.js"></script>
+    <script src="./questions.js"></script>
+    <script src= "./logic.js"></script>
   </body>
 </html>
