@@ -1,3 +1,24 @@
+var timeEl=document.querySelector(".time")
+var startBtn= document.querySelector("#start")
+//var timeLeft= 130;
+
+var interval =null
+
+//update the timer
+function timer(){
+	seconds--;
+
+	var timerInterval= setInterval(function(){
+		timeLeft--;
+		timeEl.textContent= timeLeft;
+
+		if(timeLeft === 0) {
+			clearInterval(timerInterval);
+		}
+	}, 13000);
+}
+console.log(setTime)
+
 function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
 
 	function showQuestions(questions, quizContainer){

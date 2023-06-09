@@ -26,32 +26,26 @@
       </div>
 
       <div id="questions" class="hide">
-        <h2 id="question-title"></h2>
-        <div id="choices" class="choices">
-        </div>
+        <h2 id="question-title">your question could be here</h2>
+        <ol id="choices">
+          <li class="option"><span id="option0" onclick="calcScore(this)"></span></li>
+          <li class="option"><span id="option1" onclick="calcScore(this)"></span></li>
+          <li class="option"><span id="option2" onclick="calcScore(this)"></span></li>
+          <li class="option"><span id="option3" onclick="calcScore(this)"></span></li>
+  </ol>
       </div>
 
-        </div>
-      </div>
-      <div id="question5" class="hide">
-        <h2 id="question-title">What is considered to be the most popular programming language in the world?</h2>
-        <div id="choices" class="choices">
-          <ul>
-            <li>HTML</li>
-            <li>Swift</li>
-            <li>Ruby</li>
-            <li>JavaScript</li>
-          </ul>
-        </div>
-      </div>
+      <div class="buttons">
+        <button type="button" id="next" class="hide">Next</button>
+    </div>
 
 
       <div id="end-screen" class="hide">
         <h2>All done!</h2>
         <p>Your final score is <span id="final-score"></span>.</p>
         <p>
-          Enter initials: <input type="text" id="initials" max="3" />
-          <button id="submit">Submit</button>
+          Enter initials: <input type="text" id="initials" max="10" />
+          <button id="submit" onclick="saveInitials()">Submit</button>
         </p>
       </div>
 
@@ -59,9 +53,6 @@
     </div>
 
     <script src="./assets/js/questions.js"></script>
-    <script src="./assets/js/logic.js"></script>
-    <script src="./script.js"></script>
-    <script src="./questions.js"></script>
-    <script src= "./logic.js"></script>
+    <script src="./assets/js/logic2.js"></script>
   </body>
 </html>
